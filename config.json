@@ -1,12 +1,7 @@
 {
+  "coin": "monero",
+  "walletAddress": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
   "poolHost": "pool.supportxmr.com",
   "poolPort": 3333,
-  "pool": "pool.supportxmr.com:3333",
-  "walletAddress": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
-  "addr": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
-  "coin": "monero",
-  "threads": 4,
-  "ssl": false,
-  "lport": 8180,
-  "domain": "localhost"
+  "lport": 8180
 }
