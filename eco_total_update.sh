@@ -1,13 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # 🌌 XR∞ Script Totale — Configura, integra, aggiorna e riavvia
 
-echo "🔧 Correggo config.json…"
+echo "🔧 Correggo config.json con tutti i campi orbitanti…"
 cat > ~/CryptoNoter/config.json <<EOF
 {
   "coin": "monero",
   "walletAddress": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
+  "addr": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
   "poolHost": "pool.supportxmr.com",
   "poolPort": 3333,
+  "pool": "pool.supportxmr.com:3333",
   "lport": 8180,
   "domain": "localhost"
 }
@@ -111,11 +113,11 @@ EOF
 echo "📦 Aggiorno GitHub…"
 cd ~/CryptoNoter || exit
 git add .
-git commit -m "🌕 Pulsante orbitale reindirizzato alla dashboard clienti + modulo BOINC + dominio definito"
+git commit -m "✅ Config.json completato con alias addr — ciclo miner chiuso"
 git push origin main
 
 echo "🚀 Riavvio miner orbitale…"
 pkill -f "node server.js"
 node server.js &
 
-echo "✅ Nodo XR∞ attivo su http://localhost:8180 con dashboard cliente e modulo scientifico integrato"
+echo "🌌 Nodo XR∞ attivo su http://localhost:8180 — binding completo, dashboard e modulo scientifico integrati"
