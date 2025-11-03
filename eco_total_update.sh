@@ -8,11 +8,12 @@ cat > ~/CryptoNoter/config.json <<EOF
   "walletAddress": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
   "poolHost": "pool.supportxmr.com",
   "poolPort": 3333,
-  "lport": 8180
+  "lport": 8180,
+  "domain": "localhost"
 }
 EOF
 
-echo "🌐 Ricompilo index.html con modulo BOINC…"
+echo "🌐 Ricompilo index.html con modulo BOINC e dashboard cliente…"
 cat > ~/CryptoNoter/public/index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="it">
@@ -43,9 +44,9 @@ cat > ~/CryptoNoter/public/index.html <<'EOF'
   </div>
 
   <div class="section">
-    <h2>🌕 Dashboard Monero</h2>
-    <button onclick="window.open('https://supportxmr.com/#/dashboard?address=491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX')">
-      🌕 Il mio nodo Monero
+    <h2>🌕 Dashboard Cliente WebMiner</h2>
+    <button onclick="window.open('http://localhost:8180')">
+      🌕 Vai alla Dashboard Orbitale
     </button>
   </div>
 
@@ -110,11 +111,11 @@ EOF
 echo "📦 Aggiorno GitHub…"
 cd ~/CryptoNoter || exit
 git add .
-git commit -m "🌌 XR∞ Portale orbitale aggiornato con modulo scientifico BOINC e config.json corretto"
+git commit -m "🌕 Pulsante orbitale reindirizzato alla dashboard clienti + modulo BOINC + dominio definito"
 git push origin main
 
 echo "🚀 Riavvio miner orbitale…"
 pkill -f "node server.js"
 node server.js &
 
-echo "✅ Nodo XR∞ attivo su http://localhost:8180 con modulo scientifico integrato"
+echo "✅ Nodo XR∞ attivo su http://localhost:8180 con dashboard cliente e modulo scientifico integrato"
