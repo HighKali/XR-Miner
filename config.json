@@ -1,8 +1,12 @@
 {
-    "lhost": "127.0.0.1",
-    "lport": 7777,
-    "domain": "localhost",
-    "pool": "pool.cryptonoter.com:1111",
-    "addr": "4316FfZHjukgKHqiXuAfHo5CqP7N3p6jLhKwHy3RSCvpjaSP9tF9LWzcfstXAAU5NHdo74qsDLJUuJCxfCA3e2WREJfTvXw",
-    "pass": "x"
+  "poolHost": "pool.supportxmr.com",
+  "poolPort": 3333,
+  "pool": "pool.supportxmr.com:3333",
+  "walletAddress": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
+  "addr": "491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX",
+  "coin": "monero",
+  "threads": 4,
+  "ssl": false,
+  "lport": 8180,
+  "domain": "localhost"
 }
